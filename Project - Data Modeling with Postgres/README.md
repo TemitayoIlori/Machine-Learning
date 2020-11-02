@@ -30,3 +30,7 @@ etl.py. This is the main script that reads all of the records in song_data and l
 python3 etl.py
 
 While the etl.py script was running, the CLI showed the number of records found nd the number of records processed.
+
+![Song_data_files_processed](/home/workspace/Song_data_files_processed.png)
+
+![Song_data_files_processed](https://r766469c826263xjupyterllyjhwqkl.udacity-student-workspaces.com/lab/tree/Song_data_files_processed.PNG)
