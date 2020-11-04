@@ -18,15 +18,15 @@ user_table_create = ("""CREATE TABLE IF NOT EXISTS users \
                     (userId INT PRIMARY KEY, firstName Varchar, lastName Varchar, gender varchar, level varchar)""")
 
 song_table_create = ("""CREATE TABLE IF NOT EXISTS songs \
-                    (song_id varchar NOT NULL, title varchar, artist_id varchar, year INT, duration float)""")
+                    (song_id varchar PRIMARY KEY NOT NULL, title varchar, artist_id varchar, year INT, duration float)""")
 
 
 artist_table_create = ("""CREATE TABLE IF NOT EXISTS artists \
-                    (artist_id varchar NOT NULL, artist_name varchar, artist_location varchar, \
+                    (artist_id varchar PRIMARY KEY NOT NULL, artist_name varchar, artist_location varchar, \
                     artist_latitude varchar, artist_longitude varchar)""")
 
 time_table_create = ("""CREATE TABLE IF NOT EXISTS time \
-                    (start_time varchar NOT NULL, hour INT, day INT, week INT, month INT, year INT, weekday varchar)""")
+                    (start_time varchar PRIMARY KEY NOT NULL, hour INT, day INT, week INT, month INT, year INT, weekday varchar)""")
 
 
 # INSERT RECORDS
