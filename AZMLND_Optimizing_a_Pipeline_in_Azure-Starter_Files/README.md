@@ -2,11 +2,12 @@
 
 ## Overview
 This project is part of the Udacity Azure ML Nanodegree.
-In this project, we build and optimize an Azure ML pipeline using the Python SDK and a provided Scikit-learn model.
+In this project, I built and optimized an Azure ML pipeline using the Python SDK and a provided Scikit-learn model.
 This model is then compared to an Azure AutoML run.
 
 ## Summary
 **In 1-2 sentences, explain the problem statement: e.g "This dataset contains data about... we seek to predict..."**
+For this project, a file was provided that contains bank marketing iformation. It cotains data about prospective customers. The target column (y) indicates if a customer subscribed to a fixed term deposit. This project will be a classication model that predicts if a customer will subscribe to a fixed term deposit with a financial institution.
 
 **In 1-2 sentences, explain the solution: e.g. "The best performing model was a ..."**
 
