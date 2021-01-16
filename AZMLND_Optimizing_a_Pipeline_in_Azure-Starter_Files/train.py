@@ -21,7 +21,7 @@ x, y = clean_data(ds)
 # TODO: Split data into train and test sets.
 x_train, x_test, y_train, y_test=train_test_split(x,y,test_size=0.3, random_state=40)
 
-### YOUR CODE HERE ###a
+# ## YOUR CODE HERE ###a
 
 run = Run.get_context()
 
@@ -50,7 +50,8 @@ def clean_data(data):
     x_df["poutcome"] = x_df.poutcome.apply(lambda s: 1 if s == "success" else 0)
 
     y_df = x_df.pop("y").apply(lambda s: 1 if s == "yes" else 0)
-    
+    return y_df, x_df
+
 
 def main():
     # Add arguments to script
