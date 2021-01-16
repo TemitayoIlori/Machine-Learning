@@ -17,8 +17,10 @@ The best performing model was VotingEnsemble. It has AUC of 0.94823. The accurac
 I used Random sampling as a Parameter Sampler with choice of (50,100,150,200).   
 
 In random sampling, hyperparameter values are randomly selected from the defined search space.
+
 **What are the benefits of the parameter sampler you chose?**
 The advantage of Random Sampling is that it supports early termination of low-performing runs.
+
 **What are the benefits of the early stopping policy you chose?**
 The early  stopping policy is BANDIT with a Slack factor of 0.2 and evaluation interval of 2.
 
