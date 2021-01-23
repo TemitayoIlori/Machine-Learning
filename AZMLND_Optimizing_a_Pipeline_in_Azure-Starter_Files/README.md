@@ -10,7 +10,7 @@ This model is then compared to an Azure AutoML run.
 For this project, a file was provided that contains bank marketing iformation. It cotains data about prospective customers. The target column (y) indicates if a customer subscribed to a fixed term deposit. This project will be a classication model that predicts if a customer will subscribe to a fixed term deposit with a financial institution.
 
 **In 1-2 sentences, explain the solution: e.g. "The best performing model was a ..."**
-The best performing model was VotingEnsemble. It has AUC of 0.9480367. The accuracy was 0.91573
+The best performing model was VotingEnsemble. It has AUC of 0.95021. The accuracy was 0.91627
 
 ## Scikit-learn Pipeline
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
