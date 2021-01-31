@@ -34,5 +34,7 @@ I will try Bayesian sampling as a parameter sampler. Since it picks samples base
 **If you did not delete your compute cluster in the code, please complete this section. Otherwise, delete this section.**
 **Image of cluster marked for deletion**
 
-See attached images.
+See the images below.
 ![alt text](https://github.com/TemitayoIlori/Machine-Learning/blob/main/AZMLND_Optimizing_a_Pipeline_in_Azure-Starter_Files/AML4.PNG)
+![alt text](https://github.com/TemitayoIlori/Machine-Learning/blob/main/AZMLND_Optimizing_a_Pipeline_in_Azure-Starter_Files/AML5.jpg)
+![alt text](https://github.com/TemitayoIlori/Machine-Learning/blob/main/AZMLND_Optimizing_a_Pipeline_in_Azure-Starter_Files/AML6.PNG)
