@@ -52,6 +52,7 @@ Instead of changing the primary metric, a weighted column could be used to make 
 **Image of cluster marked for deletion**
 
 See the images below.
+
 ![alt text](https://github.com/TemitayoIlori/Machine-Learning/blob/main/AZMLND_Optimizing_a_Pipeline_in_Azure-Starter_Files/AML4.PNG)
 ![alt text](https://github.com/TemitayoIlori/Machine-Learning/blob/main/AZMLND_Optimizing_a_Pipeline_in_Azure-Starter_Files/AML5.jpg)
 ![alt text](https://github.com/TemitayoIlori/Machine-Learning/blob/main/AZMLND_Optimizing_a_Pipeline_in_Azure-Starter_Files/AML6.PNG)
