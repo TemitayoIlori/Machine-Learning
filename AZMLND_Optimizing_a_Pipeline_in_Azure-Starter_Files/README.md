@@ -40,7 +40,7 @@ The AutoML model performed better and is faster than the Scikit-learn pipeline. 
 
 ## Future work
 **Improvement for future experiments? Why might these improvements help the model?**
-I will try Bayesian sampling as a parameter sampler. Since it picks samples based on the performance of previous samples, it can help improve primary metric.
+I will try Bayesian sampling as a parameter sampler. Since it picks samples based on the performance of previous samples, it can help improve primary metric. Basically, they choose the next hyperparameter based on the hyperparameters used in previous runs that performed well. Therefore, they are able to detect hyperparameters that are more promising than just randomly selecting an hyperparameter.
 
 A second improvement will be to fix the data imbalance that was detected. The first thing would be to find out the cause of the imbalance - whether due to limited availability of data or the nature of the dataset. 
 
