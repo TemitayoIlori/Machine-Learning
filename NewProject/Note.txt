@@ -1,0 +1,44 @@
+python -- version
+az --help
+az login
+# This opens an authentication browser
+az extension add -n azure-cli-ml
+#Says extension is already installed
+az ad sp create-for-rbac --sdk --name ml-auth
+#role-based access control
+#capture the client id
+az ad sp show --id [enter the client id given above]
+#Get the objectId
+az ml workspace share -w [enter workspace name] --user [enter objectid obtained above] --role owner
+az ml workspace share -w Temi --user 0a631dc5-0d4d-4d92-ade2-2e0c0b2e6d5c --role owner
+
+
+
+Create experiment.
+Deploy the experiment as ACI. Enable authentication
+Download config.json file and move it to the excercise folder
+add service.update(enable_app_insights=True) to log.py and enter the nameof the deployed model
+Run bash swagger.sh
+
+
+
+"age": 54,
+            "job": "services",
+            "marital": "married",
+            "education": "basic.9y",
+            "default": "no",
+            "housing": "yes",
+            "loan": "yes",
+            "contact": "cellular",
+            "month": "jul",
+            "day_of_week": "fri",
+            "duration": 500,
+            "campaign": 1,
+            "pdays": 999,
+            "previous": 0,
+            "poutcome": "failure",
+            "emp.var.rate": -1.8,
+            "cons.price.idx": 93.465,
+            "cons.conf.idx": -41.8,
+            "euribor3m": 4.96,
+            "nr.employed": 5191,
