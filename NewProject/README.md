@@ -9,6 +9,7 @@ For this project, a file was provided that contains bank marketing information. 
 ## Architecture and Description
 **Introduction**
 I was provided the url for the data. I imported the data by into Azure ML portal and I registed it. The image below shows the registered dataset.
+
 ![alt text](https://github.com/TemitayoIlori/Machine-Learning/blob/main/NewProject/1.%20Registered%20Dataset.PNG)
 
 Then, I proceeded the create AutoML on the dataset.
@@ -25,9 +26,10 @@ The image above shows that AutoML was carried out on the Bank Marketing dataset.
 
 ![alt text](https://github.com/TemitayoIlori/Machine-Learning/blob/main/NewProject/2.%20AML%20Complete.PNG)
 
-![alt text](https://github.com/TemitayoIlori/Machine-Learning/blob/main/NewProject/3.%20AML%20Complete.PNG
+![alt text](https://github.com/TemitayoIlori/Machine-Learning/blob/main/NewProject/3.%20AML%20Complete.PNG)
 
 As shown below VotingEnsemble is the algorithm with the best performance, with an accuracy of 0.91730. 
+
 ![alt text](https://github.com/TemitayoIlori/Machine-Learning/blob/main/NewProject/4.%20Best%20Model.PNG)
 
 ![alt text](https://github.com/TemitayoIlori/Machine-Learning/blob/main/NewProject/5.%20Best%20Model.PNG)
@@ -92,7 +94,7 @@ Then I created an endpoint pipeline. I used RunDetails to see the progress of th
 
 
 ## Future work
-**Improvement for future experiments? Why might these improvements help the model?**
+**Improvement for future experiments**
 
 AutoML shows data imbalance. The first thing would be to find out the cause of the imbalance - whether due to limited availability of data or the nature of the dataset. I could deal with the data imbalance by using a metric that is better suited to imbalanced data. An example is AUC_weighted, which considers the relative number of samples in a class in determining the contribution of the class.
 
@@ -101,3 +103,4 @@ Instead of changing the primary metric, a weighted column could be used to make 
 A second thing I can do is to carry out another type of experiment, like Regression or forecasting.
 
 In addition, I could also make use of accelerated models/training like ResNet 50, VGG-16 etc. These make it easy to train and deployed to Azure.
+
