@@ -102,5 +102,5 @@ Instead of changing the primary metric, a weighted column could be used to make 
 
 A second thing I can do is to carry out another type of experiment, like Regression or forecasting.
 
-In addition, I could also make use of accelerated models/training like ResNet 50, VGG-16 etc. These make it easy to train and deployed to Azure.
+In addition, I could also make use of accelerated models/training like ResNet 50, VGG-16 etc. These make it easy to train and deploy model to Azure.
 
