@@ -16,7 +16,7 @@ Then, I proceeded the create AutoML on the dataset.
 
 **Architecture**
 
-![alt text](https://github.com/TemitayoIlori/Machine-Learning/blob/main/NewProject/Architectural%20Diagram.PNG)
+![alt text](https://github.com/TemitayoIlori/Machine-Learning/blob/main/NewProject/Architectural%20Diagram.jpg)
 
 The image above shows the architecture of the AutoML. It can be seen that the task is classification and  accuracy is the primary metric.
 
