@@ -11,46 +11,19 @@ from azureml.core.run import Run
 from azureml.data.dataset_factory import TabularDatasetFactory
 from azureml.core  import Dataset 
 
-#ds = pd.read_csv("https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv") 
-
 ### YOUR CODE HERE ###
-url='https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv'
+url='https://archive.ics.uci.edu/ml/machine-learning-databases/parkinsons/parkinsons.data'
 ds=Dataset.Tabular.from_delimited_files(path=url)
-#ds.to_pandas_dataframe()
-#####################
-  from azureml.core import Dataset, Datastore
-   from azureml.data.datapath import DataPath
 
-   # create tabular dataset from delimited files in datastore
-   datastore = Datastore.get(workspace, 'workspaceblobstore')
-   datastore_path = [
-       DataPath(datastore, 'weather/2018/11.csv'),
-       DataPath(datastore, 'weather/2018/12.csv'),
-       DataPath(datastore, 'weather/2019/*.csv')
-   ]
-   tabular = Dataset.Tabular.from_delimited_files(path=datastore_path)
-
-   # create tabular dataset from delimited files behind public web urls.
-   web_path = [
-       'https://url/datafile1.tsv',
-       'https://url/datafile2.tsv'
-   ]
-   tabular = Dataset.Tabular.from_delimited_files(path=web_path, separator='\t')
-
-   # use `set_column_types` to set column data types
-   from azureml.data import DataType
-   data_types = {
-       'ID': DataType.to_string(),
-       'Date': DataType.to_datetime('%d/%m/%Y %I:%M:%S %p'),
-       'Count': DataType.to_long(),
-       'Latitude': DataType.to_float(),
-       'Found': DataType.to_bool()
-   }
-   tabular = Dataset.Tabular.from_delimited_files(path=web_path, set_column_types=data_types)
-
-####################
 run = Run.get_context()
 
+def split_data(data):
+        # Clean and one hot encode data
+    x_df = data.to_pandas_dataframe().dropna()
+    y_df = x_df.pop("status")
+    return x_df, y_df
+
+x, y = split_data(ds)
 
 # TODO: Split data into train and test sets.
 x_train, x_test, y_train, y_test=train_test_split(x,y,test_size=0.3, random_state=40)
