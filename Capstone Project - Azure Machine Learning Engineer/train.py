@@ -20,6 +20,7 @@ run = Run.get_context()
 def split_data(data):
         # Clean and one hot encode data
     x_df = data.to_pandas_dataframe().dropna()
+    x_df.drop("name", inplace=True, axis=1)
     y_df = x_df.pop("status")
     return x_df, y_df
 
