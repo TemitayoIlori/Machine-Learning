@@ -3,6 +3,10 @@
 ## Overview
 This project is part of the Udacity Azure ML Nanodegree. This project is in three parts. In the first part, I optimized hyperparameters for Machine Learning using Python SDK. In the second part, built and optimized an Azure ML pipeline using the Python SDK and Scikit-learn model. This model is then compared to the hyerparameter model. Here is a screen capture for the project https://youtu.be/GCAblR2ltv8.
 
+![alt text](https://github.com/TemitayoIlori/Machine-Learning/blob/main/Capstone%20Project%20-%20Azure%20Machine%20Learning%20Engineer/Capstone%20Architecture.png)
+
+The architecture for the project is shown above.
+
 ## Summary
 **Problem statement:**
 
