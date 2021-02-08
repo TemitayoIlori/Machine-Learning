@@ -1,6 +1,6 @@
 # Capstone Project - Azure Machine Learning Engineer
 
-## Overview
+## Overview of Project
 This project is part of the Udacity Azure ML Nanodegree. This project is in three parts. In the first part, I optimized hyperparameters for Machine Learning using Python SDK. In the second part, built and optimized an Azure ML pipeline using the Python SDK and Scikit-learn model. This model is then compared to the hyerparameter model. Here is a screen capture for the project https://youtu.be/GCAblR2ltv8.
 
 ![alt text](https://github.com/TemitayoIlori/Machine-Learning/blob/main/Capstone%20Project%20-%20Azure%20Machine%20Learning%20Engineer/Capstone%20Architecture.png)
@@ -10,11 +10,21 @@ The architecture for the project is shown above.
 ## Summary
 **Problem statement:**
 
-I work in the healthcare industry. Even though I am not a physician, I will like to contribute to the health of people in my community. Therefore, for this project, I chose to work on data on Parkinson disease. I obtained the data from https://archive.ics.uci.edu/ml/machine-learning-databases/parkinsons/parkinsons.data.
+I will like to contribute to the health of people in my community. Therefore, for this project, I chose to work on data on Parkinson disease. I obtained the data from https://archive.ics.uci.edu/ml/machine-learning-databases/parkinsons/parkinsons.data.
 **Solution:**
 AutoML did better than hyperparameter optimization.
 
+## Overview of Data
+
+The data used for this project was obtained from https://archive.ics.uci.edu/ml/machine-learning-databases/parkinsons/parkinsons.data. As shown in the images below, I obtained the data using TabularDatasetFactory. I cleaned the dataset by removing a column called 'name' which is not useful for this project. Then, I registered the dataset.
+
+![alt text](https://github.com/TemitayoIlori/Machine-Learning/blob/main/Capstone%20Project%20-%20Azure%20Machine%20Learning%20Engineer/AutoML-Images/1.%20Obtained%20and%20Registered%20Dataset.PNG)
+
+![alt text](https://github.com/TemitayoIlori/Machine-Learning/blob/main/Capstone%20Project%20-%20Azure%20Machine%20Learning%20Engineer/AutoML-Images/2.%20Registered%20Dataset.PNG)
+
+
 ## Scikit-learn Pipeline
+
 
 **Pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
 I imported the data by creating TabularDataset using TabularDatasetFactory. I cleaned the data by removing the 'name' field. 
@@ -45,11 +55,6 @@ The AutoML model performed better and is faster than the Scikit-learn pipeline. 
 
 
 ## Deployment and Consumption of AutoML Model
-
-![alt text](https://github.com/TemitayoIlori/Machine-Learning/blob/main/Capstone%20Project%20-%20Azure%20Machine%20Learning%20Engineer/AutoML-Images/1.%20Obtained%20and%20Registered%20Dataset.PNG)
-
-![alt text](https://github.com/TemitayoIlori/Machine-Learning/blob/main/Capstone%20Project%20-%20Azure%20Machine%20Learning%20Engineer/AutoML-Images/2.%20Registered%20Dataset.PNG)
-I obtained and registered the dataset
 
 ![alt text](https://github.com/TemitayoIlori/Machine-Learning/blob/main/Capstone%20Project%20-%20Azure%20Machine%20Learning%20Engineer/AutoML-Images/4.%20AML%20Running.png)
 
