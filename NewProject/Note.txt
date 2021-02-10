@@ -22,7 +22,7 @@ Run bash swagger.sh
 
 
 
-"age": 54,
+ "age": 54,
             "job": "services",
             "marital": "married",
             "education": "basic.9y",
