@@ -21,7 +21,6 @@ add service.update(enable_app_insights=True) to log.py and enter the nameof the 
 Run bash swagger.sh
 
 
-
  "age": 54,
             "job": "services",
             "marital": "married",
