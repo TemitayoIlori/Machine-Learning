@@ -20,7 +20,6 @@ Download config.json file and move it to the excercise folder
 add service.update(enable_app_insights=True) to log.py and enter the nameof the deployed model
 Run bash swagger.sh
 
-
  "age": 54,
             "job": "services",
             "marital": "married",
