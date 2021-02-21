@@ -12,7 +12,6 @@ az ad sp show --id [enter the client id given above]
 az ml workspace share -w [enter workspace name] --user [enter objectid obtained above] --role owner
 az ml workspace share -w Temi --user 0a631dc5-0d4d-4d92-ade2-2e0c0b2e6d5c --role owner
 
-
 Create experiment.
 Deploy the experiment as ACI. Enable authentication
 Download config.json file and move it to the excercise folder
